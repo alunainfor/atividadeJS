@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13: Apresenta campos para preenchimento, sendo que alguns são obrigatórios.</title>
+<head>
+<script>
+    function campo_obrigatorio(x)
+    {
+        if(x.value=="")
+        {
+            alert("O campo " + x.name + " náo pode ficar em branco.")
+        }
+    }
+</script>
+</head>
+<body>
+    Nota: Os campos marcados com asteríscos são obrigatórios. <br><br>
+    <form>
+        *Nome completo: <input type="text" name="nome" value="" size=30 maxlength=30 onblur="Campo_obrigatório(this)"><br>
+        *Idade: <input type="text" name="idade" value="" size=5 maxlength=5><br>
+        *Cidade: <input type="text" name="cidade" value="" size=20 maxlength=20 onblur="Campo_obrigatório(this)"><br>
+        Telefone: <input type="text" name="telefone" value="" size=15 maxlength=15><br>
+    </form> 
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresenta três funções (botões) para trabalhar com janelas.</title>
+<body>
+    <script>
+        functionabre1()
+    { 
+        window.open ("http://www.google.com");
+    }
+       functionabre2 ()
+       { 
+        window.open ("http://www.google.com", "simples", "width=350,height=400");
+       }
+       functionabre3 ()
+       {
+        window.open ("http://www.google.com", "simples", menubar,scrollbars,width=300,height=200);
+       }
+</script>
+</head>
+</html>
+<form>
+Dê um clique no botão para abrir uma janela simples:
+<input type="botton" name="abrir" value="Janela1" onClik="abre1()"><br><br>
+Dê um clique no botão para abrir uma janela de 350px de largura por 400px de altura, sem barras e menus:
+<input type="button" name="abrir" value-="Janela2" onClik="abre2()"><br><br>
+Dê um clique no botão para abrir uma janela com menu e barra de rolagens, mas sem barra de endereço e barra padrão:
+<input type="button" name="abrir" value="Janela3" onClik="abre3()"><br><br>
+</form>
+</body>
+</html>
